@@ -1,6 +1,7 @@
 public class Student
 {
     /* Instance Variables */
+
     private String firstName;
     private String lastName;
     private int gradYear;
@@ -8,12 +9,14 @@ public class Student
     private int testScoreCount;
 
     /* Constructor; see note below */
+
     public Student(String firstName, String lastName, int gradYear)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gradYear = gradYear;
     }
+
 
     /* Methods */
 
@@ -41,14 +44,16 @@ public class Student
 // quotient of accumulatedTestScores and testScoreCount
     public double averageTestScore()
     {
-        return accumulatedTestScores/testScoreCount;
+        return accumulatedTestScores / testScoreCount;
     }
 
     // this method prints all info of a Student object to the console
     public void printStudentInfo()
     {
-        System.out.println("Student Name: " + firstName + " " + lastName);
-        System.out.println("Graduation");
-    }
+        System.out.println("Student name: " + firstName + " " + lastName);
+        System.out.println("Graduation Year: " + gradYear);
+        System.out.println("Average Test Score: " + averageTestScore());
+        System.out.println("Number of Tests Averaged: " + testScoreCount);
+}
 }
 
